@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ValidadorEmailBr",
+            "request": "launch",
+            "mainClass": "ValidadorEmailBr",
+            "projectName": "java-learning-labs_cd059613"
+        },
+        {
+            "type": "java",
+            "name": "terreno",
+            "request": "launch",
+            "mainClass": "terreno",
+            "projectName": "java-learning-labs_cd059613"
+        },
+        {
+            "type": "java",
+            "name": "Run Current File",
+            "request": "launch",
+            "mainClass": "${fileBasenameNoExtension}",
+            "cwd": "${fileDirname}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
