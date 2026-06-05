@@ -33,6 +33,6 @@ public class Comissionado extends Funcionario{
 
     @Override
     public String toString() {
-        return "O salario do comissionado é de :" + calcularSalario();
+        return "O salario do comissionado é de:" + calcularSalario();
     }
 }
