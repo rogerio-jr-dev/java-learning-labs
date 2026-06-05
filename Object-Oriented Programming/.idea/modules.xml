@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Object-Oriented Programming.iml" filepath="$PROJECT_DIR$/.idea/Object-Oriented Programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetoACME/ProjetoACME.iml" filepath="$PROJECT_DIR$/ProjetoACME/ProjetoACME.iml" />
     </modules>
   </component>
 </project>
