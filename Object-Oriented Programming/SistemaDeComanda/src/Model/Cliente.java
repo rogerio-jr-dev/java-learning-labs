@@ -14,11 +14,19 @@ public abstract class Cliente {
         this.nome = nome;
         this.sexo = sexo;
     }
+    public String getId() {
+        return id;
+    }
+    public String getTicket() {
+        return ticket;
+    }
+    public String getNome() {
+        return nome;
+    }
+    public Sexo getSexo() {
+        return sexo;
+    }
 
-    public abstract String getId();
-    public abstract String getTicket();
-    public abstract String getNome();
-    public abstract Sexo getSexo();
     public abstract double calcularIngresso();
 
 
