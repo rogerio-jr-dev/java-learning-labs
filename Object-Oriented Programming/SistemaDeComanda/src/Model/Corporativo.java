@@ -8,8 +8,8 @@ import static Util.ResgatarBar.INGRESSO_MULHER;
 public class Corporativo extends Cliente{
     private String empresa;
 
-    public Corporativo(String id, String ticket, String nome, Sexo sexo, String empresa) {
-        super(id, ticket, nome, sexo);
+    public Corporativo(String ticket, String nome, Sexo sexo, String empresa) {
+        super(ticket, nome, sexo);
         this.empresa = empresa;
     }
 
