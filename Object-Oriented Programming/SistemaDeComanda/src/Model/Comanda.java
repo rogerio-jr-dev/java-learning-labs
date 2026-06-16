@@ -3,6 +3,7 @@ package Model;
 import Enuns.StatusComanda;
 import Model.Cliente;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import static Util.ResgatarBar.COUVERT;
@@ -13,7 +14,7 @@ public class Comanda {
     private LocalDateTime dataFechamento;
     private StatusComanda status;
     private Cliente cliente;
-    private List<ItemConsumo> itens;
+    private List<ItemConsumo> itens = new ArrayList<>();
 
     public List<ItemConsumo> getItens() {
         return itens;
@@ -23,6 +24,7 @@ public class Comanda {
     }
     public void removerItem(ItemConsumo item){
         itens.removeIf(p -> p.getNome().equals(item.getNome()));
+        // Terei que refazer o método, pois aqui removera qualquer item com o nome igual
     }
     public double calcularConsumoTotal(){
         double total = 0.0;
@@ -38,4 +40,5 @@ public class Comanda {
         return COUVERT;
     }
 
+    // fechar() deve chamar a classe
 }

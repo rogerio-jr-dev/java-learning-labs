@@ -6,8 +6,8 @@ import static Util.ResgatarBar.INGRESSO_HOMEM;
 import static Util.ResgatarBar.INGRESSO_MULHER;
 
 public class ClienteComum extends Cliente{
-    public ClienteComum(String ticket, String nome, Sexo sexo) {
-        super(ticket, nome, sexo);
+    public ClienteComum(String id, String ticket, String nome, Sexo sexo) {
+        super(id,ticket, nome, sexo);
     }
 
     @Override

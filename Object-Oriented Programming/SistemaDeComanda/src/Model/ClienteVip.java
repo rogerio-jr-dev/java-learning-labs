@@ -7,8 +7,8 @@ import static Util.ResgatarBar.INGRESSO_MULHER;
 
 public class ClienteVip extends Cliente{
 
-    public ClienteVip(String ticket, String nome, Sexo sexo) {
-        super(ticket, nome, sexo);
+    public ClienteVip(String id, String ticket, String nome, Sexo sexo) {
+        super(id, ticket, nome, sexo);
     }
 
     @Override

@@ -5,11 +5,11 @@ import Enuns.Sexo;
 import static Util.ResgatarBar.INGRESSO_HOMEM;
 import static Util.ResgatarBar.INGRESSO_MULHER;
 
-public class Corporativo extends Cliente{
+public class ClienteCorporativo extends Cliente{
     private String empresa;
 
-    public Corporativo(String ticket, String nome, Sexo sexo, String empresa) {
-        super(ticket, nome, sexo);
+    public ClienteCorporativo(String id, String ticket, String nome, Sexo sexo, String empresa) {
+        super(id, ticket, nome, sexo);
         this.empresa = empresa;
     }
 

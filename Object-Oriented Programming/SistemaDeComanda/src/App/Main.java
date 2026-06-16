@@ -5,14 +5,17 @@ import Enuns.Sexo;
 import Model.Cliente;
 import Model.ClienteComum;
 import Model.ClienteVip;
-import Model.Corporativo;
+import Model.ClienteCorporativo;
+
+import static Util.GeradorTicket.gerarIdCliente;
+import static Util.GeradorTicket.gerarTicket;
 
 public class Main {
     public static void main(String[] args) {
 
-    Cliente c1 = new ClienteComum("TKC001","Junior - ", Sexo.Masculino);
-    Cliente c2 = new ClienteVip("TKC003","Joao - ", Sexo.Masculino);
-    Cliente c3 = new Corporativo("TKC004","Cleber - ", Sexo.Masculino, "Pollos Hermanos");
+    Cliente c1 = new ClienteComum(gerarIdCliente(),gerarTicket(),"Junior - ", Sexo.Masculino);
+    Cliente c2 = new ClienteVip(gerarIdCliente(),gerarTicket(),"Joao - ", Sexo.Masculino);
+    Cliente c3 = new ClienteCorporativo(gerarIdCliente(),gerarTicket(),"Cleber - ", Sexo.Masculino, "Pollos Hermanos");
 
     c2.calcularIngresso();
 

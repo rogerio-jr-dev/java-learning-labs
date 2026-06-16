@@ -3,25 +3,25 @@ package Model;
 import Enuns.Sexo;
 
 public abstract class Cliente {
+    private String id;
     private String ticket;
     private String nome;
     private Sexo sexo;
 
-    private static int id = 0;
-
-    public Cliente(String ticket, String nome, Sexo sexo) {
+    public Cliente(String id, String ticket, String nome, Sexo sexo) {
+        this.id = id;
         this.ticket = ticket;
         this.nome = nome;
         this.sexo = sexo;
     }
-    public int getId() {
+
+    public String getId() {
         return id;
     }
     public String getTicket() {
         return ticket;
     }
     public String getNome() {
-        id++;
         return nome;
     }
     public Sexo getSexo() {
@@ -32,7 +32,7 @@ public abstract class Cliente {
 
     @Override
     public String toString() {
-        return "Id: "+ id + " - Nome: " + getNome() + " Valor do ingresso: "+ calcularIngresso() +" R$";
+        return "Id: "+ id + "N° Ticket: "+ getTicket()+" - Nome: " + getNome() + " Valor do ingresso: "+ calcularIngresso() +" R$";
     }
 
 }
